@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #3c3c3c;
+  font: 1rem/1.5 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial,sans-serif;
+  background-color: #f0f0f2;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #253b40;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}
+
+.website-link:link,
+.website-link:visited {
+  color: #486b73;
+  text-decoration: none;
+  border-bottom: 1.5px dashed #486b73;
+}
+
+.website-link:hover {
+  color: #7b9ae6;
+  border-bottom: 1.5px dashed #7b9ae6;
+}
+
+/* Main header styles */
+
+.main-header {
+  color: rgba(255, 255, 255, 1);
+  height: 1000px;
+  padding-top: 180px;
+  background: linear-gradient(to bottom, transparent, black 100%),
+              url("https://www.caa-network.org/wp-content/uploads/2018/04/17157783_1275929135794193_1539102956455816494_o-1160x773.png") no-repeat center;
+  background-position-y: 10%;
+  background-size: cover;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 80px; 
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  margin-top: 200px;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+
+.title {
+  font-size: 1.375rem; /* 22px/16px */
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.title p {
+  margin: 0 20px;
+}
+
+.date {
+  font-size: 1.375rem; /* 22px/16px */
+  color: rgba(255, 255, 255, 1);
+  font-weight: normal;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  word-spacing: 7px;
+  padding-top: 20px;
+}
+
+.arrow {
+  margin-top: 200px;
+  width: 50px;
+}
+
+.arrow:hover {
+  transform: scale(1.5);
+}
+
+/* Biography styles*/
+
+#bio-section {
+  margin: 0 auto;
+  width: 65%;
+  text-align: center;
+  max-width: 1200px;
+  padding-bottom: 25px;
+}
+
+.intro {
+  font-size: 24px;
+  line-height: 1.8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #787878;
+  margin: 0 auto;
+}
+
+.intro:hover {
+  color: #303030;
+}
+
+.biography {
+  font-size: 1em;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  color: #3c3c3c;
+  display: flex;
+}
+
+.bio-image {
+  margin-right: 15px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+
+.bio-image img {
+  width: 270px;
+  max-width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.quote {
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.quote-footer {
+  color: #787878;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+.bio-text {
+  font-size: 1.125rem; /* 18px/16px */
+  line-height: 1.7;
+  padding: 0 25px;
+  text-align: left;
+  border-left: solid 3px #253b40;
+  flex: 2;
+}
+
+.bio-text p {
+  padding-bottom: 10px;
+}
+
+
+
+/* Main footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+/* Media Queries ----------------------------------*/
+
+@media (max-width: 1024px) {
+  .main-header {
+    max-height: 800px;
+  }
+
+  .main-header h1 {
+    font-size: 5rem; /* 80px/16px */
+    margin-top: 120px;
+  }
+
+  .arrow {
+    margin-top: 120px;
+  }
+
+  #bio-section {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    max-height: 620px;
+  }
+
+  .main-header h1 {
+    margin-top: 70px;
+    font-size: 4.0625rem; /* 65px/16px */
+  }
+
+  .title,
+  .date {
+    font-size: 1.125rem; /* 18px/16px */
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .intro {
+    font-size: 1.25rem; /* 20px/16px */
+  }
+
+  #bio-section {
+    width: 95%;
+  }
+
+  .biography {
+    flex-direction: column;
+  }
+
+  .bio-image {
+    width: 100%;
+  }
+
+  .quote- {
+    padding-bottom: 20px;
+  }
+
+  .bio-text {
+    width: 100%;
+  }
+
+  .image-gallery-intro,
+  .image-gallery-intro p {
+    font-size: 1.125rem; /* 18px/16px */
+    width: 95%;
+  }
+}
+
+@media (max-width: 675px) {
+  .main-header {
+    background-position: 60%;
+  }
+
+  .title {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    background-position: 70%;
+  }
+
+  .main-header h1 {
+    font-size: 3.125rem; /* 50px/16px */
+  }
+
+  .title,
+  .date {
+    font-size: 0.75rem; /* 12px/16px */
+  }
+
+
+  .intro {
+    font-size: 1.125rem; /* 18px/16px */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bio-image img {
+    width: 250px;
+  }
+
+  #bio-section {
+    width: 100%;
+  }
+}
+
+
